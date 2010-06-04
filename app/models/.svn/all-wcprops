@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/2/trunk/app/models
+END
+etudiant.rb
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/2/trunk/app/models/etudiant.rb
+END
+examen.rb
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/3/trunk/app/models/examen.rb
+END
+distanciel.rb
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/3/trunk/app/models/distanciel.rb
+END
+evenement.rb
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/app/models/evenement.rb
+END
+periode.rb
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/3/trunk/app/models/periode.rb
+END
+pratique.rb
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/3/trunk/app/models/pratique.rb
+END
+administrateur.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/app/models/administrateur.rb
+END
+intervenant.rb
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/3/trunk/app/models/intervenant.rb
+END
+espace.rb
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/3/trunk/app/models/espace.rb
+END
+cursu.rb
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/2/trunk/app/models/cursu.rb
+END
+dirige.rb
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/3/trunk/app/models/dirige.rb
+END
+soutenance.rb
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/3/trunk/app/models/soutenance.rb
+END
+campu.rb
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/3/trunk/app/models/campu.rb
+END
+evaluation.rb
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/3/trunk/app/models/evaluation.rb
+END
+cour.rb
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/3/trunk/app/models/cour.rb
+END
+classe.rb
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/2/trunk/app/models/classe.rb
+END
+presentiel.rb
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/3/trunk/app/models/presentiel.rb
+END
+utilisateur.rb
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/3/trunk/app/models/utilisateur.rb
+END
+manager.rb
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/3/trunk/app/models/manager.rb
+END

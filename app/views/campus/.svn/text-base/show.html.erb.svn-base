@@ -1,0 +1,28 @@
+<p>
+  <b>Nom:</b>
+  <%=h @campus.nom %>
+</p>
+
+<p>
+  <b>Pays:</b>
+  <%=h @campus.pays %>
+</p>
+
+<p>
+  <b>Manager:</b>
+  <%=h @campus.manager_id %>
+</p>
+
+<p>
+  <b>Espace:</b>
+  <%=h @campus.espace_id %>
+</p>
+
+<p>
+  <b>Classe:</b>
+  <%=h @campus.classe_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_campus_path(@campus) %> |
+<%= link_to 'Back', campus_path %>

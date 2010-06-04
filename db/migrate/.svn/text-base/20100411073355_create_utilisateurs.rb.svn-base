@@ -1,0 +1,18 @@
+class CreateUtilisateurs < ActiveRecord::Migration
+  def self.up
+    create_table :utilisateurs do |t|
+      t.string :usr_nom
+      t.string :usr_prenom
+      t.string :usr_email
+      t.date :usr_date_naissance
+      t.string :usr_alias
+      t.integer :evenement_id
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :utilisateurs
+  end
+end

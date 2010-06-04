@@ -1,0 +1,5 @@
+class Cour < ActiveRecord::Base
+  belongs_to :periode
+  belongs_to :evenement
+  has_many :evaluation
+end

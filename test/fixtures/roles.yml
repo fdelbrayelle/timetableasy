@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+administrateur:
+  name: administrateur
+  user_id: 68086721
+
+manager:
+  name: manager
+  user_id: 314461839
+
+intervenant:
+  name: intervenant
+  user_id: 668299460
+  
+etudiant:
+  name: etudiant
+  user_id: 986744351

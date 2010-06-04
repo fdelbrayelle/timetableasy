@@ -1,0 +1,35 @@
+<% form_for(@cursu) do |f| %>
+  <%= error_messages_for :cursu, :id => "message_error_close", :class => 'message error close', :header_message => "Connexion impossible !", :message => "Des erreurs se sont glissées dans la saisie du formulaire." %>
+
+<h1>Nouveau cursus</h1>
+
+  <p>
+    Nom du cursus<br />
+    <%= f.text_field :nom %>
+  </p>
+
+  <% form_for(@periode) do |g| %>
+
+  <p>
+    Nom de la période<br />
+    <%= g.text_field :nom %>
+  </p>
+
+  <p>
+    <%= g.label :début %><br />
+    <%= g.date_select :début, :start_year => Time.now.year - 5, :end_year => Time.now.year + 2, :discard_day => true, :discard_month => true %>
+  </p>
+
+  <p>
+    <%= g.label :fin %><br />
+    <%= g.date_select :fin, :start_year => Time.now.year - 5, :end_year => Time.now.year + 2, :discard_day => true, :discard_month => true %>
+  </p>
+
+  <% end %>
+
+  <p>
+    <%= f.submit 'Créer' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', cursus_path, :class => "button tooltip" %>

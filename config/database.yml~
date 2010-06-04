@@ -1,0 +1,23 @@
+development:
+  adapter: mysql
+  database: db/time_dev
+  pool: 5
+  timeout: 5000
+  username: root
+  password: password
+
+test:
+  adapter: mysql
+  database: db/time_test
+  pool: 5
+  timeout: 5000
+  username: root
+  password: password
+
+production:
+  adapter: mysql
+  database: db/time_prod
+  pool: 5
+  timeout: 5000
+  username: root
+  password: password

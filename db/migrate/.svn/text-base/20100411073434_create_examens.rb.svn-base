@@ -1,0 +1,12 @@
+class CreateExamens < ActiveRecord::Migration
+  def self.up
+    create_table :examens do |t|
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :examens
+  end
+end

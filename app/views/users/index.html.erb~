@@ -1,0 +1,33 @@
+<h1>Liste des utilisateurs</h1>
+
+<table class="fullwidth" cellspacing="0" cellpadding="0" border="0">
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>Mail</th>
+      <th>Date de naissance</th>
+      <th>Alias</th>
+      <th colspan="2">Actions</th>
+    </tr>
+  </thead>
+
+<% for user in @users %>
+  <tr>
+    <td><%=h user.username %></td>
+    <td><%=h user.nom %></td>
+    <td><%=h user.prénom %></td>
+    <td><%=h user.email %></td>
+    <td><%=h user.date_naissance %></td>
+    <td><%=h user.alias %></td>
+    <td><%= link_to 'Editer', edit_user_path(user) %></td>
+    <td><%= link_to 'Supprimer', user, :confirm => 'Etes-vous sûr ?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nouvel utilisateur', new_user_path, :class => "button tooltip" %>
+<%= link_to 'Retour', admin_path, :class => "button tooltip" %>

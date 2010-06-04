@@ -1,0 +1,28 @@
+<h1>Editing cours</h1>
+
+<% form_for(@cours) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nom %><br />
+    <%= f.text_field :nom %>
+  </p>
+  <p>
+    <%= f.label :heures_total %><br />
+    <%= f.text_field :heures_total %>
+  </p>
+  <p>
+    <%= f.label :heures_reste %><br />
+    <%= f.text_field :heures_reste %>
+  </p>
+  <p>
+    <%= f.label :evaluation_id %><br />
+    <%= f.text_field :evaluation_id %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @cours %> |
+<%= link_to 'Back', cours_path %>

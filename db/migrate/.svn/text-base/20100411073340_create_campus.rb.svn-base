@@ -1,0 +1,17 @@
+class CreateCampus < ActiveRecord::Migration
+  def self.up
+    create_table :campus do |t|
+      t.string :cmp_nom
+      t.string :cmp_pays
+      t.integer :manager_id
+      t.integer :espace_id
+      t.integer :classe_id
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :campus
+  end
+end

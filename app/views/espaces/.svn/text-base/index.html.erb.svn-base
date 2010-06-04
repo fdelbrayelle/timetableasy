@@ -1,0 +1,22 @@
+<h1>Listing espaces</h1>
+
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Type</th>
+  </tr>
+
+<% for espace in @espaces %>
+  <tr>
+    <td><%=h espace.code %></td>
+    <td><%=h espace.type %></td>
+    <td><%= link_to 'Show', espace %></td>
+    <td><%= link_to 'Edit', edit_espace_path(espace) %></td>
+    <td><%= link_to 'Destroy', espace, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New espace', new_espace_path %>

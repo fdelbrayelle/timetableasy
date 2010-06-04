@@ -1,0 +1,85 @@
+class DistancielsController < ApplicationController
+  # GET /distanciels
+  # GET /distanciels.xml
+  def index
+    @distanciels = Distanciel.find(:all)
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @distanciels }
+    end
+  end
+
+  # GET /distanciels/1
+  # GET /distanciels/1.xml
+  def show
+    @distanciel = Distanciel.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @distanciel }
+    end
+  end
+
+  # GET /distanciels/new
+  # GET /distanciels/new.xml
+  def new
+    @distanciel = Distanciel.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @distanciel }
+    end
+  end
+
+  # GET /distanciels/1/edit
+  def edit
+    @distanciel = Distanciel.find(params[:id])
+  end
+
+  # POST /distanciels
+  # POST /distanciels.xml
+  def create
+    @distanciel = Distanciel.new(params[:distanciel])
+
+    respond_to do |format|
+      if @distanciel.save
+        flash[:notice] = 'Distanciel was successfully created.'
+        format.html { redirect_to(@distanciel) }
+        format.xml  { render :xml => @distanciel, :status => :created, :location => @distanciel }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @distanciel.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /distanciels/1
+  # PUT /distanciels/1.xml
+  def update
+    @distanciel = Distanciel.find(params[:id])
+
+    respond_to do |format|
+      if @distanciel.update_attributes(params[:distanciel])
+        flash[:notice] = 'Distanciel was successfully updated.'
+        format.html { redirect_to(@distanciel) }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @distanciel.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /distanciels/1
+  # DELETE /distanciels/1.xml
+  def destroy
+    @distanciel = Distanciel.find(params[:id])
+    @distanciel.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(distanciels_url) }
+      format.xml  { head :ok }
+    end
+  end
+end

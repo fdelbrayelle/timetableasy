@@ -1,0 +1,16 @@
+class CreateCours < ActiveRecord::Migration
+  def self.up
+    create_table :cours do |t|
+      t.string :cou_nom
+      t.integer :cou_total
+      t.integer :cou_reste
+      t.integer :evaluation_id
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :cours
+  end
+end

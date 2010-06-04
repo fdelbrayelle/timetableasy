@@ -1,0 +1,20 @@
+<h1>Editing espace</h1>
+
+<% form_for(@espace) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :code %><br />
+    <%= f.text_field :code %>
+  </p>
+  <p>
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @espace %> |
+<%= link_to 'Back', espaces_path %>

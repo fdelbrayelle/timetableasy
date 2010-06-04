@@ -1,0 +1,13 @@
+<p>
+  <b>Nom:</b>
+  <%=h @cursus.nom %>
+</p>
+
+<p>
+  <b>Periode:</b>
+  <%=h @cursus.periode_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_cursus_path(@cursus) %> |
+<%= link_to 'Back', cursus_path %>

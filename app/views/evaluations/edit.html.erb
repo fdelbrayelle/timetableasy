@@ -1,0 +1,11 @@
+<% form_for(@evaluation) do |f| %>
+  <%= error_messages_for :evaluation, :id => "message_error_close", :class => 'message error close', :header_message => "Connexion impossible !", :message => "Des erreurs se sont glissées dans la saisie du formulaire." %>
+
+<h1>Editer une evaluation</h1>
+
+  <p>
+    <%= f.submit "Editer" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', evaluations_path, :class => "button tooltip" %>

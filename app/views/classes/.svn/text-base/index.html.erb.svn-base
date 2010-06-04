@@ -1,0 +1,24 @@
+<h1>Listing classes</h1>
+
+<table>
+  <tr>
+    <th>Utilisateur</th>
+    <th>Etudiant</th>
+    <th>Periode</th>
+  </tr>
+
+<% for classe in @classes %>
+  <tr>
+    <td><%=h classe.utilisateur_id %></td>
+    <td><%=h classe.etudiant_id %></td>
+    <td><%=h classe.periode_id %></td>
+    <td><%= link_to 'Show', classe %></td>
+    <td><%= link_to 'Edit', edit_classe_path(classe) %></td>
+    <td><%= link_to 'Destroy', classe, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New classe', new_classe_path %>

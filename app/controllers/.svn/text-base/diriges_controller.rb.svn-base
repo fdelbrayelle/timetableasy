@@ -1,0 +1,85 @@
+class DirigesController < ApplicationController
+  # GET /diriges
+  # GET /diriges.xml
+  def index
+    @diriges = Dirige.find(:all)
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @diriges }
+    end
+  end
+
+  # GET /diriges/1
+  # GET /diriges/1.xml
+  def show
+    @dirige = Dirige.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @dirige }
+    end
+  end
+
+  # GET /diriges/new
+  # GET /diriges/new.xml
+  def new
+    @dirige = Dirige.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @dirige }
+    end
+  end
+
+  # GET /diriges/1/edit
+  def edit
+    @dirige = Dirige.find(params[:id])
+  end
+
+  # POST /diriges
+  # POST /diriges.xml
+  def create
+    @dirige = Dirige.new(params[:dirige])
+
+    respond_to do |format|
+      if @dirige.save
+        flash[:notice] = 'Dirige was successfully created.'
+        format.html { redirect_to(@dirige) }
+        format.xml  { render :xml => @dirige, :status => :created, :location => @dirige }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @dirige.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /diriges/1
+  # PUT /diriges/1.xml
+  def update
+    @dirige = Dirige.find(params[:id])
+
+    respond_to do |format|
+      if @dirige.update_attributes(params[:dirige])
+        flash[:notice] = 'Dirige was successfully updated.'
+        format.html { redirect_to(@dirige) }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @dirige.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /diriges/1
+  # DELETE /diriges/1.xml
+  def destroy
+    @dirige = Dirige.find(params[:id])
+    @dirige.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(diriges_url) }
+      format.xml  { head :ok }
+    end
+  end
+end

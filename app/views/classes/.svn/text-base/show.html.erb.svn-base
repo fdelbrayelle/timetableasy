@@ -1,0 +1,18 @@
+<p>
+  <b>Utilisateur:</b>
+  <%=h @classe.utilisateur_id %>
+</p>
+
+<p>
+  <b>Etudiant:</b>
+  <%=h @classe.etudiant_id %>
+</p>
+
+<p>
+  <b>Periode:</b>
+  <%=h @classe.periode_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_classe_path(@classe) %> |
+<%= link_to 'Back', classes_path %>

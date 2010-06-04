@@ -1,0 +1,85 @@
+class PratiquesController < ApplicationController
+  # GET /pratiques
+  # GET /pratiques.xml
+  def index
+    @pratiques = Pratique.find(:all)
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @pratiques }
+    end
+  end
+
+  # GET /pratiques/1
+  # GET /pratiques/1.xml
+  def show
+    @pratique = Pratique.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @pratique }
+    end
+  end
+
+  # GET /pratiques/new
+  # GET /pratiques/new.xml
+  def new
+    @pratique = Pratique.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @pratique }
+    end
+  end
+
+  # GET /pratiques/1/edit
+  def edit
+    @pratique = Pratique.find(params[:id])
+  end
+
+  # POST /pratiques
+  # POST /pratiques.xml
+  def create
+    @pratique = Pratique.new(params[:pratique])
+
+    respond_to do |format|
+      if @pratique.save
+        flash[:notice] = 'Pratique was successfully created.'
+        format.html { redirect_to(@pratique) }
+        format.xml  { render :xml => @pratique, :status => :created, :location => @pratique }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @pratique.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /pratiques/1
+  # PUT /pratiques/1.xml
+  def update
+    @pratique = Pratique.find(params[:id])
+
+    respond_to do |format|
+      if @pratique.update_attributes(params[:pratique])
+        flash[:notice] = 'Pratique was successfully updated.'
+        format.html { redirect_to(@pratique) }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @pratique.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /pratiques/1
+  # DELETE /pratiques/1.xml
+  def destroy
+    @pratique = Pratique.find(params[:id])
+    @pratique.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(pratiques_url) }
+      format.xml  { head :ok }
+    end
+  end
+end

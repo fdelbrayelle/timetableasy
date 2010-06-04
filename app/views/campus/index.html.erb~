@@ -1,0 +1,24 @@
+<h1>Liste des campus</h1>
+
+<table class="fullwidth" cellspacing="0" cellpadding="0" border="0">
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Pays</th>
+      <th colspan="2">Actions</th>
+    </tr>
+  </thead>
+
+<% @campus.each do |campu| %>
+  <tr>
+    <td><%=h campu.nom %></td>
+    <td><%=h campu.pays %></td>
+    <td><%= link_to 'Editer', edit_campu_path(campu) %></td>
+    <td><%= link_to 'Supprimer', campu, :confirm => 'Etes-vous sûr ?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nouveau campus', new_campu_path, :class => "button tooltip" %>

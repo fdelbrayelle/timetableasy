@@ -1,0 +1,55 @@
+class UtilisateursController < ApplicationController
+
+  def index
+    @utilisateurs = Utilisateur.find(:all)
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @utilisateurs }
+    end
+  end
+
+  def new
+    @utilisateur = Utilisateur.new
+  end
+
+  def edit
+    @utilisateur = current_user
+  end
+
+  def create
+    @utilisateur = Utilisateur.new(params[:utilisateur])
+    respond_to do |format|
+      if @utilisateur.save
+        flash[:notice] = 'Utilisateur ajouté avec succès.'
+        format.html { redirect_to(root_url) }
+        format.xml  { render :xml => @utilisateur, :status => :created, :location => @utilisateur }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @utilisateur.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  def update
+    @utilisateur = current_user
+    respond_to do |format|
+      if @utilisateur.update_attributes(params[:utilisateur])
+        flash[:notice] = 'Profil édité avec succès.'
+        format.html { redirect_to(root_url) }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @utilisateur.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  def destroy
+    @utilisateur = Utilisateur.find(params[:id])
+    @utilisateur.destroy
+    respond_to do |format|
+      format.html { redirect_to(utilisateurs_url) }
+      format.xml  { head :ok }
+    end
+  end
+end

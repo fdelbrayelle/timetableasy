@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  utilisateur_id: 1
+  etudiant_id: 1
+  periode_id: 1
+
+two:
+  utilisateur_id: 1
+  etudiant_id: 1
+  periode_id: 1

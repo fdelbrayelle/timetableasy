@@ -1,0 +1,85 @@
+class SoutenancesController < ApplicationController
+  # GET /soutenances
+  # GET /soutenances.xml
+  def index
+    @soutenances = Soutenance.find(:all)
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @soutenances }
+    end
+  end
+
+  # GET /soutenances/1
+  # GET /soutenances/1.xml
+  def show
+    @soutenance = Soutenance.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @soutenance }
+    end
+  end
+
+  # GET /soutenances/new
+  # GET /soutenances/new.xml
+  def new
+    @soutenance = Soutenance.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @soutenance }
+    end
+  end
+
+  # GET /soutenances/1/edit
+  def edit
+    @soutenance = Soutenance.find(params[:id])
+  end
+
+  # POST /soutenances
+  # POST /soutenances.xml
+  def create
+    @soutenance = Soutenance.new(params[:soutenance])
+
+    respond_to do |format|
+      if @soutenance.save
+        flash[:notice] = 'Soutenance was successfully created.'
+        format.html { redirect_to(@soutenance) }
+        format.xml  { render :xml => @soutenance, :status => :created, :location => @soutenance }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @soutenance.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /soutenances/1
+  # PUT /soutenances/1.xml
+  def update
+    @soutenance = Soutenance.find(params[:id])
+
+    respond_to do |format|
+      if @soutenance.update_attributes(params[:soutenance])
+        flash[:notice] = 'Soutenance was successfully updated.'
+        format.html { redirect_to(@soutenance) }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @soutenance.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /soutenances/1
+  # DELETE /soutenances/1.xml
+  def destroy
+    @soutenance = Soutenance.find(params[:id])
+    @soutenance.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(soutenances_url) }
+      format.xml  { head :ok }
+    end
+  end
+end

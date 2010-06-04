@@ -1,0 +1,47 @@
+<% form_for(@user) do |f| %>
+  <%= error_messages_for :user, :id => "message_error_close", :class => 'message error close', :header_message => "Connexion impossible !", :message => "Des erreurs se sont glissées." %>
+
+<% if @user.id == current_user.id %>
+  <h1>Editer mon profil</h1>
+<% else %>
+  <h1>Editer un utilisateur</h1>
+<% end %>
+
+  <p>
+    Nom d'utilisateur<br />
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    Mot de passe<br />
+    <%= f.password_field :password %>
+  </p>
+  <p>
+    Confirmation du mot de passe<br />
+    <%= f.password_field :password_confirmation %>
+  </p>
+  <p>
+    <%= f.label :nom %><br />
+    <%= f.text_field :nom %>
+  </p>
+  <p>
+    <%= f.label :prénom %><br />
+    <%= f.text_field :prénom %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :alias %><br />
+    <%= f.text_field :alias %>
+  </p>
+  <p>
+    <%= f.label :date_naissance %><br />
+    <%= f.date_select :date_naissance, :start_year => 1900, :end_year => Time.now.year - 10, :use_month_numbers => true, :order => [:day, :month, :year] %>
+  </p>
+  <p>
+    <%= f.submit "Editer" %>
+  </p>
+<% end %>
+
+<%= link_to 'Retour', users_path, :class => "button tooltip" %>

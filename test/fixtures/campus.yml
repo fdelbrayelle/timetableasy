@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+lille:
+  nom: Lille
+  pays: France
+  user_id: 
+  espace_id: 
+  classe_id: 
+
+paris:
+  nom: Paris
+  pays: France
+  user_id: 
+  espace_id: 
+  classe_id: 

@@ -1,0 +1,68 @@
+<p>
+  <b>Nom:</b>
+  <%=h @evenement.nom %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @evenement.description %>
+</p>
+
+<p>
+  <b>Readonly:</b>
+  <%=h @evenement.readonly %>
+</p>
+
+<p>
+  <b>Debut:</b>
+  <%=h @evenement.debut %>
+</p>
+
+<p>
+  <b>Duree:</b>
+  <%=h @evenement.duree %>
+</p>
+
+<p>
+  <b>Campu:</b>
+  <%=h @evenement.campu_id %>
+</p>
+
+<p>
+  <b>Espace:</b>
+  <%=h @evenement.espace_id %>
+</p>
+
+<p>
+  <b>Intervenant:</b>
+  <%=h @evenement.intervenant_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @evenement.user_id %>
+</p>
+
+<p>
+  <b>Role:</b>
+  <%=h @evenement.role_id %>
+</p>
+
+<p>
+  <b>Classe:</b>
+  <%=h @evenement.classe_id %>
+</p>
+
+<p>
+  <b>Cour:</b>
+  <%=h @evenement.cour_id %>
+</p>
+
+<p>
+  <b>Evaluation:</b>
+  <%=h @evenement.evaluation_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_evenement_path(@evenement) %> |
+<%= link_to 'Back', evenements_path %>

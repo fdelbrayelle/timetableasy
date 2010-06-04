@@ -1,0 +1,19 @@
+<% form_for(@campu) do |f| %>
+  <%= error_messages_for :campu, :id => "message_error_close", :class => 'message error close', :header_message => "Connexion impossible !", :message => "Des erreurs se sont glissées." %>
+
+<h1>Editer un campus</h1>
+
+  <p>
+    <%= f.label :nom %><br />
+    <%= f.text_field :nom %>
+  </p>
+  <p>
+    <%= f.label :pays %><br />
+    <%= f.text_field :pays %>
+  </p>
+  <p>
+    <%= f.submit 'Editer' %>
+  </p>
+<% end %>
+
+<%= link_to 'Retour', campus_path, :class => "button tooltip" %>

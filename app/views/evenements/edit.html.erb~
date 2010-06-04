@@ -1,0 +1,67 @@
+<% form_for(@evenement) do |f| %>
+  <%= error_messages_for :evenement, :id => "message_error_close", :class => 'message error close', :header_message => "Connexion impossible !", :message => "Des erreurs se sont glissées dans la saisie du formulaire." %>
+
+<h1>Editer un evenement</h1>
+
+<% form_for(@evenement) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nom %><br />
+    <%= f.text_field :nom %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :readonly %><br />
+    <%= f.check_box :readonly %>
+  </p>
+  <p>
+    <%= f.label :debut %><br />
+    <%= f.datetime_select :debut %>
+  </p>
+  <p>
+    <%= f.label :duree %><br />
+    <%= f.text_field :duree %>
+  </p>
+  <p>
+    <%= f.label :campu_id %><br />
+    <%= f.text_field :campu_id %>
+  </p>
+  <p>
+    <%= f.label :espace_id %><br />
+    <%= f.text_field :espace_id %>
+  </p>
+  <p>
+    <%= f.label :intervenant_id %><br />
+    <%= f.text_field :intervenant_id %>
+  </p>
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :role_id %><br />
+    <%= f.text_field :role_id %>
+  </p>
+  <p>
+    <%= f.label :classe_id %><br />
+    <%= f.text_field :classe_id %>
+  </p>
+  <p>
+    <%= f.label :cour_id %><br />
+    <%= f.text_field :cour_id %>
+  </p>
+  <p>
+    <%= f.label :evaluation_id %><br />
+    <%= f.text_field :evaluation_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @evenement %> |
+<%= link_to 'Back', evenements_path %>

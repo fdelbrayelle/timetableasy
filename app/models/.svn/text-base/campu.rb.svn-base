@@ -1,0 +1,6 @@
+class Campu < ActiveRecord::Base
+  belongs_to :evenement
+  has_one :manager
+  has_many :classes
+  has_many :espaces
+end

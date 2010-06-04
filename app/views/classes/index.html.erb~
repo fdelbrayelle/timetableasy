@@ -1,0 +1,26 @@
+<h1>Liste des classes</h1>
+
+<table class="fullwidth" cellspacing="0" cellpadding="0" border="0">
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Etudiant</th>
+      <th>Periode</th>
+      <th colspan="2">Actions</th>
+    </tr>
+  </thead>
+
+<% @classes.each do |classe| %>
+  <tr>
+    <td><%=h classe.user_id %></td>
+    <td><%=h classe.etudiant_id %></td>
+    <td><%=h classe.periode_id %></td>
+    <td><%= link_to 'Edit', edit_class_path(classe) %></td>
+    <td><%= link_to 'Destroy', classe, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nouvelle classe', new_class_path, :class => "button tooltip" %>

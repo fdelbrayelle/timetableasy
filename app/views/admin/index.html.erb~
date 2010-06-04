@@ -1,0 +1,46 @@
+<h1>Interface d'administration</h1>
+
+<p>Quelle action souhaitez-vous effectuer ?</p>
+					
+<div class="pad20">
+<!-- Big buttons -->
+    <ul class="dash">
+            <li>
+                    <a href="/users/new" title="Créer un nouvel utilisateur" class="tooltip">
+	                    <img src="/images/assets/icons/8_48x48.png" alt="" />
+	                    <span>Nouvel utilisateur</span>
+                    </a>
+            </li>
+            <li>
+                    <a href="/users" title="Voir la liste des utilisateurs" class="tooltip">
+	                    <img src="/images/assets/icons/7_48x48.png" alt="" />
+	                    <span>Utilisateurs</span>
+                    </a>
+            </li>
+            <li>
+                    <a href="index.html#" title="Afficher les étudiants inscrits" class="tooltip">
+	                    <img src="/images/assets/icons/16_48x48.png" alt="" />
+	                    <span>Etudiants inscrits</span>
+                    </a>
+            </li>
+            <li>
+                    <a href="/campus" title="Voir les campus" class="tooltip">
+	                    <img src="/images/assets/icons/33_48x48.png" alt="" />
+	                    <span>Campus</span>
+                    </a>
+            </li>
+            <li>
+                    <a href="/cursus" title="Afficher les cursus courants" class="tooltip">
+	                    <img src="/images/assets/icons/31_48x48.png" alt="" />
+	                    <span>Cursus</span>
+                    </a>
+            </li>
+            <li>
+                    <a href="/classes" title="Lister les différentes classes" class="tooltip">
+	                    <img src="/images/assets/icons/32_48x48.png" alt="" />
+	                    <span>Classes</span>
+                    </a>
+            </li>
+    </ul>
+    <!-- End of Big buttons -->
+</div>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nom: MyString
+  début: 2010-06-04
+  fin: 2010-06-04
+  cour_id: 1
+
+two:
+  nom: MyString
+  début: 2010-06-04
+  fin: 2010-06-04
+  cour_id: 1

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nom: MyString
+  heures_total: 1
+  heures_reste: 1
+  evaluation_id: 1
+
+two:
+  nom: MyString
+  heures_total: 1
+  heures_reste: 1
+  evaluation_id: 1

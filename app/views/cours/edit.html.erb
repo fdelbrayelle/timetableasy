@@ -1,0 +1,22 @@
+<% form_for(@cours) do |f| %>
+  <%= error_messages_for :cours, :id => "message_error_close", :class => 'message error close', :header_message => "Connexion impossible !", :message => "Des erreurs se sont glissées." %>
+
+<h1>Editer un cours</h1>
+
+  <p>
+    Intitulé<br />
+    <%= f.text_field :nom %>
+  </p>
+  <p>
+    Nombre d'heures<br />
+    <%= f.text_field :heures_total %>
+  </p>
+
+
+
+  <p>
+    <%= f.submit "Editer" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', cours_path, :class => "button tooltip"  %>

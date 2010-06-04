@@ -1,0 +1,13 @@
+<p>
+  <b>Code:</b>
+  <%=h @espace.code %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @espace.type %>
+</p>
+
+
+<%= link_to 'Edit', edit_espace_path(@espace) %> |
+<%= link_to 'Back', espaces_path %>

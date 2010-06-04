@@ -1,0 +1,26 @@
+<h1>Listing cours</h1>
+
+<table>
+  <tr>
+    <th>Nom</th>
+    <th>Heures total</th>
+    <th>Heures reste</th>
+    <th>Evaluation</th>
+  </tr>
+
+<% for cours in @cours %>
+  <tr>
+    <td><%=h cours.nom %></td>
+    <td><%=h cours.heures_total %></td>
+    <td><%=h cours.heures_reste %></td>
+    <td><%=h cours.evaluation_id %></td>
+    <td><%= link_to 'Show', cours %></td>
+    <td><%= link_to 'Edit', edit_cours_path(cours) %></td>
+    <td><%= link_to 'Destroy', cours, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New cours', new_cours_path %>

@@ -1,0 +1,19 @@
+<% form_for(@user_session) do |f| %>
+  <%= error_messages_for :user_session, :id => "message_error_close", :class => 'message error close', :header_message => "Connexion impossible !", :message => "Des erreurs se sont glissées dans la saisie du formulaire." %>
+
+<h1>Connexion</h1>
+
+  <p>
+    Nom d'utilisateur<br />
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    Mot de passe<br />
+    <%= f.password_field :password %>
+  </p>
+  <p>
+    <%= f.submit "Login" %>
+  </p>
+<% end %>
+
+<%= link_to 'Retour', root_path, :class => "button tooltip" %>

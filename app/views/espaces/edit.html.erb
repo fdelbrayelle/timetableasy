@@ -1,0 +1,19 @@
+<% form_for(@espace) do |f| %>
+  <%= error_messages_for :espace, :id => "message_error_close", :class => 'message error close', :header_message => "Connexion impossible !", :message => "Des erreurs se sont glissées dans la saisie du formulaire." %>
+
+<h1>Editer un espace</h1>
+
+  <p>
+    <%= f.label :code %><br />
+    <%= f.text_field :code %>
+  </p>
+  <p>
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </p>
+  <p>
+    <%= f.submit "Editer" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', espaces_path, :class => "button tooltip" %>

@@ -1,0 +1,57 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+alexandre:
+  username: alexandre
+  password: 
+  password_confirmation: 
+  crypted_password: e377533f2d147cb2abf8ee83a29d50d37774e69fade8abcd040abf045aeb9dd9521aa7745ec62a2bbd2b041a20b741e5a5e9ae94416a53e62e2aea1f0379d6dd
+  password_salt: d-TZPqAZqVE0jdtB550H
+  persistence_token: 89e6e4d1a43a202cc458efc3de35b9fcb5977bfd9784e95ed65548a049cbe07b49cdb5d2439a94d082be2c6b909706bc0fb6ba50ca9eca155e36fce2d0cad03b
+  nom: Cuvillier
+  prénom: Alexandre
+  email: alexandre.cuvillier@globus.com
+  date_naissance: 1987-07-23
+  alias: alex
+  evenement_id: 
+  
+benjamin:
+  username: benjamin
+  password: 
+  password_confirmation: 
+  crypted_password: e377533f2d147cb2abf8ee83a29d50d37774e69fade8abcd040abf045aeb9dd9521aa7745ec62a2bbd2b041a20b741e5a5e9ae94416a53e62e2aea1f0379d6dd
+  password_salt: d-TZPqAZqVE0jdtB550H
+  persistence_token: 89e6e4d1a43a202cc458efc3de35b9fcb5977bfd9784e95ed65548a049cbe07b49cdb5d2439a94d082be2c6b909706bc0fb6ba50ca9eca155e36fce2d0cad03b
+  nom: Descamps
+  prénom: Benjamin
+  email: benjamin.descamps@globus.com
+  date_naissance: 1987-07-23
+  alias: ben
+  evenement_id: 
+  
+cenk:
+  username: cenk
+  password: 
+  password_confirmation: 
+  crypted_password: e377533f2d147cb2abf8ee83a29d50d37774e69fade8abcd040abf045aeb9dd9521aa7745ec62a2bbd2b041a20b741e5a5e9ae94416a53e62e2aea1f0379d6dd
+  password_salt: d-TZPqAZqVE0jdtB550H
+  persistence_token: 89e6e4d1a43a202cc458efc3de35b9fcb5977bfd9784e95ed65548a049cbe07b49cdb5d2439a94d082be2c6b909706bc0fb6ba50ca9eca155e36fce2d0cad03b
+  nom: Senkur
+  prénom: Cenk
+  email: cenk.senkur@globus.com
+  date_naissance: 1985-07-23
+  alias: cenk
+  evenement_id: 
+
+francois:
+  username: francois
+  password: 
+  password_confirmation: 
+  crypted_password: e377533f2d147cb2abf8ee83a29d50d37774e69fade8abcd040abf045aeb9dd9521aa7745ec62a2bbd2b041a20b741e5a5e9ae94416a53e62e2aea1f0379d6dd
+  password_salt: d-TZPqAZqVE0jdtB550H
+  persistence_token: 89e6e4d1a43a202cc458efc3de35b9fcb5977bfd9784e95ed65548a049cbe07b49cdb5d2439a94d082be2c6b909706bc0fb6ba50ca9eca155e36fce2d0cad03b
+  nom: Delbrayelle
+  prénom: François
+  email: francois.delbrayelle@globus.com
+  date_naissance: 1987-07-23
+  alias: francois
+  evenement_id: 

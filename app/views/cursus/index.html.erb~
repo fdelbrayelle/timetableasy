@@ -1,0 +1,24 @@
+<h1>Liste des cursus</h1>
+
+<table class="fullwidth" cellspacing="0" cellpadding="0" border="0">
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Période</th>
+      <th colspan="2">Actions</th>
+    </tr>
+  </thead>
+
+<% @cursus.each do |cursu| %>
+  <tr>
+    <td><%=h cursu.nom %></td>
+    <td><%=h cursu.periode_id %></td>
+    <td><%= link_to 'Edit', edit_cursu_path(cursu) %></td>
+    <td><%= link_to 'Destroy', cursu, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nouveau cursus', new_cursu_path, :class => "button tooltip" %>

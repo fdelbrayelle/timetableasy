@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Meta -->
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<!-- End of Meta -->
+		
+		<!-- Page title -->
+		<title>Globus University - Timetableasy 2010</title>
+		<!-- End of Page title -->
+		
+		<!-- Libraries -->
+		<%= stylesheet_link_tag 'layout' %>
+		<%= stylesheet_link_tag 'scaffold' %>
+		<%= javascript_include_tag 'jquery-1.3.2.min' %>
+		<%= javascript_include_tag 'easyTooltip' %>
+		<%= javascript_include_tag 'jquery-ui-1.7.2.custom.min' %>
+		<%= javascript_include_tag 'jquery.wysiwyg' %>
+		<%= javascript_include_tag 'hoverIntent' %>
+		<%= javascript_include_tag 'superfish' %>
+		<%= javascript_include_tag 'custom' %>
+		<!-- End of Libraries -->	
+	</head>
+	<body>
+		<!-- Container -->
+		<div id="container">
+		
+			<!-- Header -->
+			<div id="header">
+				
+				<!-- Top -->
+				<div id="top">
+					<!-- Logo -->
+					<div class="logo" style="text-align: center"><br /><br />
+						
+					</div>
+					<!-- Meta information -->
+					<div class="meta">
+						<% if current_user %>
+							<p>Bienvenue, <%= current_user.prénom %> !</p>
+							<ul>
+								<li><a href="/logout" title="Se déconnecter" class="tooltip"><span class="ui-icon ui-icon-power"></span>Logout</a></li>
+								<li><a href="/users/<%= current_user.id %>/edit" title="Editer mon profil" class="tooltip"><span class="ui-icon ui-icon-person"></span>Profil</a></li>
+								<% if permitted_to? :index, :admin %>
+									<li><a href="/admin" title="Interface d'administration" class="tooltip"><span class="ui-icon ui-icon-wrench"></span>Admin</a></li>
+								<% end %>
+							</ul>
+					
+						<% else %>
+							<p>Bienvenue !</p>
+							<ul>
+								<li><a href="/login" title="Se connecter" class="tooltip"><span class="ui-icon ui-icon-power"></span>Login</a></li>
+							</ul>
+						<% end %>
+					</div>
+					<!-- End of Meta information -->
+				</div>
+				<!-- End of Top-->
+			
+				<!-- The navigation bar -->
+				<div id="navbar">
+					<ul class="nav">
+
+					</ul>
+				</div>
+			
+			</div>
+			<!-- End of Header -->
+			
+			<!-- Background wrapper -->
+			<div id="bgwrap">
+		
+				<!-- Main Content -->
+				<div id="content">
+					<div id="main">    				    
+                        <%= periodically_call_remote :update => 'essai',
+                            :url => '/planning/show',
+                            :frequency => 2.0
+                        %>
+                        
+                        <% if flash[:notice] %>
+                            <div class="message success close">
+                                <% if current_user %>
+                                    <h2>Félicitations !</h2>
+                                <% else %>
+                                    <h2>Au revoir !</h2>
+                                <% end %>
+                                <p><%= flash[:notice] %></p>
+                            </div>
+                        <% end %>
+                        
+                        <%= yield  %>
+					</div>
+				</div>
+				<!-- End of Main Content -->	
+
+				<!-- Sidebar -->
+				<div id="sidebar" style="text-align: center">
+					<br/><%= link_to(image_tag('../images/globus_university.png'), root_url, :class => 'tooltip') %>
+
+                    <h2>Calendrier</h2>          
+					<!-- Datepicker -->
+					<div id="datepicker"></div>
+				</div>		
+			</div>
+			<!-- End of bgwrap -->
+		</div>
+		<!-- End of Container -->
+		
+		<!-- Footer -->
+		<div id="footer">
+			<p class="mid">
+				<a href="#" title="Remonter" class="tooltip">Remonter</a>&middot;<a href="/home" title="Accueil" class="tooltip">Accueil</a><% if current_user %>&middot;<a href="/logout" title="Logout" class="tooltip">Logout</a><% end %>
+			</p>
+			<p class="mid">
+				<!-- Change this to your own once purchased -->
+				&copy; Globus University - Timetableasy 2010. Tous droits r&eacute;serv&eacute;s.
+				<!-- -->
+			</p>
+		</div>
+		<!-- End of Footer -->
+
+
+	</body>
+</html>

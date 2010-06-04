@@ -1,0 +1,7 @@
+class Evenement < ActiveRecord::Base
+  has_one :intervenant
+  has_many :campus
+  has_many :espaces
+  has_many :cours
+  has_many :evaluations
+end

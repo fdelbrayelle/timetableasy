@@ -1,0 +1,47 @@
+<%= stylesheet_link_tag 'reset.css' %>
+<%= stylesheet_link_tag 'jquery.weekcalendar.css' %>
+<%= stylesheet_link_tag 'demo.css' %>
+<%= javascript_include_tag 'demo.js'  %>
+<%= javascript_include_tag 'jquery.weekcalendar.js'  %>
+
+<script type="text/javascript">
+    function getEventData()
+    {
+        var year = new Date().getFullYear();
+        var month = new Date().getMonth();
+        var day = new Date().getDate();
+        <%= @essai %>
+    }
+</script>
+      
+<div id='calendar'></div>
+<div id="event_edit_container">
+	<form>
+		<input type="hidden" />
+		<ul>
+			<li>
+				<span>Date: </span><span class="date_holder"></span>
+			</li>
+			<li>
+				<label for="start">Date de début: </label><select name="start"><option value="">Selectionnez la date de début</option></select>
+			</li>
+			<li>
+				<label for="end">Date de fin: </label><select name="end"><option value="">Selectionnez la date de fin</option></select>
+			</li>
+			<li>
+				<label for="title">Titre: </label>
+                          <select name="title">
+                            <option value="">Type d'evenement</option>
+                            <option value="Cours">Cours</option>
+                            <option value="Evaluation">Evaluation</option>
+                            <option value="Personnel">Personnel</option>
+                          </select>
+                          
+                          <!--<input type="text" name="title" />-->
+			</li>
+			<li>
+				<label for="body">Description: </label><textarea name="body"></textarea>
+			</li>
+		</ul>
+	</form>
+</div>

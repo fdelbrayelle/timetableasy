@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/2/trunk/test/fixtures
+END
+intervenants.yml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/test/fixtures/intervenants.yml
+END
+espaces.yml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/3/trunk/test/fixtures/espaces.yml
+END
+cursus.yml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/3/trunk/test/fixtures/cursus.yml
+END
+diriges.yml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2/trunk/test/fixtures/diriges.yml
+END
+soutenances.yml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/test/fixtures/soutenances.yml
+END
+campus.yml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/3/trunk/test/fixtures/campus.yml
+END
+evaluations.yml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/test/fixtures/evaluations.yml
+END
+cours.yml
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/3/trunk/test/fixtures/cours.yml
+END
+presentiels.yml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/test/fixtures/presentiels.yml
+END
+managers.yml
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/2/trunk/test/fixtures/managers.yml
+END
+classes.yml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2/trunk/test/fixtures/classes.yml
+END
+utilisateurs.yml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/3/trunk/test/fixtures/utilisateurs.yml
+END
+examens.yml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2/trunk/test/fixtures/examens.yml
+END
+etudiants.yml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/test/fixtures/etudiants.yml
+END
+distanciels.yml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/test/fixtures/distanciels.yml
+END
+evenements.yml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/3/trunk/test/fixtures/evenements.yml
+END
+periodes.yml
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/3/trunk/test/fixtures/periodes.yml
+END
+pratiques.yml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/test/fixtures/pratiques.yml
+END
+administrateurs.yml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2/trunk/test/fixtures/administrateurs.yml
+END

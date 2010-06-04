@@ -1,0 +1,63 @@
+<p>
+  <b>Username:</b>
+  <%=h @user.username %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%=h @user.password %>
+</p>
+
+<p>
+  <b>Password confirmation:</b>
+  <%=h @user.password_confirmation %>
+</p>
+
+<p>
+  <b>Crypted password:</b>
+  <%=h @user.crypted_password %>
+</p>
+
+<p>
+  <b>Password salt:</b>
+  <%=h @user.password_salt %>
+</p>
+
+<p>
+  <b>Persistence token:</b>
+  <%=h @user.persistence_token %>
+</p>
+
+<p>
+  <b>Nom:</b>
+  <%=h @user.nom %>
+</p>
+
+<p>
+  <b>Prénom:</b>
+  <%=h @user.prénom %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @user.email %>
+</p>
+
+<p>
+  <b>Date naissance:</b>
+  <%=h @user.date_naissance %>
+</p>
+
+<p>
+  <b>Alias:</b>
+  <%=h @user.alias %>
+</p>
+
+<p>
+  <b>Evenement:</b>
+  <%=h @user.evenement_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

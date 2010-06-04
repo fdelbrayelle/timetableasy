@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/2/trunk/db/migrate
+END
+20100411073355_create_utilisateurs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/2/trunk/db/migrate/20100411073355_create_utilisateurs.rb
+END
+20100411073407_create_etudiants.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2/trunk/db/migrate/20100411073407_create_etudiants.rb
+END
+20100411073434_create_examens.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2/trunk/db/migrate/20100411073434_create_examens.rb
+END
+20100411073425_create_distanciels.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/2/trunk/db/migrate/20100411073425_create_distanciels.rb
+END
+20100411073334_create_evenements.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/2/trunk/db/migrate/20100411073334_create_evenements.rb
+END
+20100411073416_create_periodes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2/trunk/db/migrate/20100411073416_create_periodes.rb
+END
+20100411073405_create_intervenants.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/2/trunk/db/migrate/20100411073405_create_intervenants.rb
+END
+20100411073411_create_cursus.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2/trunk/db/migrate/20100411073411_create_cursus.rb
+END
+20100411073437_create_pratiques.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2/trunk/db/migrate/20100411073437_create_pratiques.rb
+END
+20100411073340_create_campus.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2/trunk/db/migrate/20100411073340_create_campus.rb
+END
+20100411073359_create_administrateurs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/2/trunk/db/migrate/20100411073359_create_administrateurs.rb
+END
+20100411073346_create_espaces.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2/trunk/db/migrate/20100411073346_create_espaces.rb
+END
+20100411073420_create_cours.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/2/trunk/db/migrate/20100411073420_create_cours.rb
+END
+20100411073431_create_evaluations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/2/trunk/db/migrate/20100411073431_create_evaluations.rb
+END
+20100411073402_create_managers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2/trunk/db/migrate/20100411073402_create_managers.rb
+END
+20100411073428_create_diriges.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2/trunk/db/migrate/20100411073428_create_diriges.rb
+END
+20100411073350_create_classes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2/trunk/db/migrate/20100411073350_create_classes.rb
+END
+20100411073423_create_presentiels.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/2/trunk/db/migrate/20100411073423_create_presentiels.rb
+END
+20100411073439_create_soutenances.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/2/trunk/db/migrate/20100411073439_create_soutenances.rb
+END

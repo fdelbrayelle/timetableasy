@@ -1,0 +1,5 @@
+class Classe < ActiveRecord::Base
+  belongs_to :campus
+  has_one :utilisateur
+  has_many :etudiants
+end

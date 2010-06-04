@@ -1,0 +1,23 @@
+class CreateEvenements < ActiveRecord::Migration
+  def self.up
+    create_table :evenements do |t|
+      t.string :evt_nom
+      t.text :evt_description
+      t.boolean :evt_obligatoire
+      t.string :evt_portee
+      t.datetime :evt_debut
+      t.integer :evt_duree
+      t.integer :campu_id
+      t.integer :espace_id
+      t.integer :intervenant_id
+      t.integer :cour_id
+      t.integer :evaluation_id
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :evenements
+  end
+end

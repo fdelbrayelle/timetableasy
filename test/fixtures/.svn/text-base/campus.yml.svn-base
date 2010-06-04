@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nom: MyString
+  pays: MyString
+  manager_id: 1
+  espace_id: 1
+  classe_id: 1
+
+two:
+  nom: MyString
+  pays: MyString
+  manager_id: 1
+  espace_id: 1
+  classe_id: 1

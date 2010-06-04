@@ -1,0 +1,40 @@
+<h1>Listing evenements</h1>
+
+<table>
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+    <th>Affichage</th>
+    <th>Portee</th>
+    <th>Debut</th>
+    <th>Duree</th>
+    <th>Campu</th>
+    <th>Espace</th>
+    <th>Intervenant</th>
+    <th>Cour</th>
+    <th>Evaluation</th>
+  </tr>
+
+<% for evenement in @evenements %>
+  <tr>
+    <td><%=h evenement.nom %></td>
+    <td><%=h evenement.description %></td>
+    <td><%=h evenement.affichage %></td>
+    <td><%=h evenement.portee %></td>
+    <td><%=h evenement.debut %></td>
+    <td><%=h evenement.duree %></td>
+    <td><%=h evenement.campu_id %></td>
+    <td><%=h evenement.espace_id %></td>
+    <td><%=h evenement.intervenant_id %></td>
+    <td><%=h evenement.cour_id %></td>
+    <td><%=h evenement.evaluation_id %></td>
+    <td><%= link_to 'Show', evenement %></td>
+    <td><%= link_to 'Edit', edit_evenement_path(evenement) %></td>
+    <td><%= link_to 'Destroy', evenement, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New evenement', new_evenement_path %>

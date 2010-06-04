@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nom: MyString
+  description: MyText
+  affichage: false
+  portee: MyString
+  debut: 2010-05-15 17:47:37
+  duree: 1
+  campu_id: 1
+  espace_id: 1
+  intervenant_id: 1
+  cour_id: 1
+  evaluation_id: 1
+
+two:
+  nom: MyString
+  description: MyText
+  affichage: false
+  portee: MyString
+  debut: 2010-05-15 17:47:37
+  duree: 1
+  campu_id: 1
+  espace_id: 1
+  intervenant_id: 1
+  cour_id: 1
+  evaluation_id: 1

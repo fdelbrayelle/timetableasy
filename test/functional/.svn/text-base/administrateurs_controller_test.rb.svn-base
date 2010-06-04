@@ -1,0 +1,45 @@
+require 'test_helper'
+
+class AdministrateursControllerTest < ActionController::TestCase
+  test "should get index" do
+    get :index
+    assert_response :success
+    assert_not_nil assigns(:administrateurs)
+  end
+
+  test "should get new" do
+    get :new
+    assert_response :success
+  end
+
+  test "should create administrateur" do
+    assert_difference('Administrateur.count') do
+      post :create, :administrateur => { }
+    end
+
+    assert_redirected_to administrateur_path(assigns(:administrateur))
+  end
+
+  test "should show administrateur" do
+    get :show, :id => administrateurs(:one).id
+    assert_response :success
+  end
+
+  test "should get edit" do
+    get :edit, :id => administrateurs(:one).id
+    assert_response :success
+  end
+
+  test "should update administrateur" do
+    put :update, :id => administrateurs(:one).id, :administrateur => { }
+    assert_redirected_to administrateur_path(assigns(:administrateur))
+  end
+
+  test "should destroy administrateur" do
+    assert_difference('Administrateur.count', -1) do
+      delete :destroy, :id => administrateurs(:one).id
+    end
+
+    assert_redirected_to administrateurs_path
+  end
+end

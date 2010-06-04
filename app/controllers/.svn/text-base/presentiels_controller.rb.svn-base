@@ -1,0 +1,85 @@
+class PresentielsController < ApplicationController
+  # GET /presentiels
+  # GET /presentiels.xml
+  def index
+    @presentiels = Presentiel.find(:all)
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @presentiels }
+    end
+  end
+
+  # GET /presentiels/1
+  # GET /presentiels/1.xml
+  def show
+    @presentiel = Presentiel.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @presentiel }
+    end
+  end
+
+  # GET /presentiels/new
+  # GET /presentiels/new.xml
+  def new
+    @presentiel = Presentiel.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @presentiel }
+    end
+  end
+
+  # GET /presentiels/1/edit
+  def edit
+    @presentiel = Presentiel.find(params[:id])
+  end
+
+  # POST /presentiels
+  # POST /presentiels.xml
+  def create
+    @presentiel = Presentiel.new(params[:presentiel])
+
+    respond_to do |format|
+      if @presentiel.save
+        flash[:notice] = 'Presentiel was successfully created.'
+        format.html { redirect_to(@presentiel) }
+        format.xml  { render :xml => @presentiel, :status => :created, :location => @presentiel }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @presentiel.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /presentiels/1
+  # PUT /presentiels/1.xml
+  def update
+    @presentiel = Presentiel.find(params[:id])
+
+    respond_to do |format|
+      if @presentiel.update_attributes(params[:presentiel])
+        flash[:notice] = 'Presentiel was successfully updated.'
+        format.html { redirect_to(@presentiel) }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @presentiel.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /presentiels/1
+  # DELETE /presentiels/1.xml
+  def destroy
+    @presentiel = Presentiel.find(params[:id])
+    @presentiel.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(presentiels_url) }
+      format.xml  { head :ok }
+    end
+  end
+end
